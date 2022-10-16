@@ -7,4 +7,5 @@ resources:
   # - "argocd_namespace.yml"
   # - "https://github.com/cert-manager/cert-manager/releases/download/v1.8.1/cert-manager.yaml"
   - "https://github.com/rabbitmq/cluster-operator/releases/latest/download/cluster-operator.yml"
-  # - "cluster-issuer.yml"
+  - "rabbitmq-cluster-default.yml"
+  - "pod-disruption-budget.yml"

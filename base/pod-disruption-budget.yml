@@ -1,0 +1,9 @@
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: default-cluster-rabbitmq
+spec:
+  maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: default-cluster

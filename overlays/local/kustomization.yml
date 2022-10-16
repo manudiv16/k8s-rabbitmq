@@ -5,5 +5,7 @@ bases:
 
 resources:
   - "https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/kind/deploy.yaml"
-  - "rabbitmq_cluster.yml"
-  - "rabbitmq-cluster-prod-ready.yml"
+  - "rabbitmq-ingress.yml"
+
+patchesStrategicMerge:
+  - "rabbitmq-cluster-default.yml"

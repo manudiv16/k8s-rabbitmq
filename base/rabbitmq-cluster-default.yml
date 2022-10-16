@@ -1,6 +1,4 @@
 apiVersion: rabbitmq.com/v1beta1
 kind: RabbitmqCluster
 metadata:
-  name: test-rabbitmq-cluster
-spec:
-  image: rabbitmq:3.11.1
+  name: default-cluster
